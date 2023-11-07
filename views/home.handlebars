@@ -1,0 +1,17 @@
+
+<h1>Home</h1>
+
+{{#if apprved}}
+    <p>cadastro aprovado</p>
+
+    {{else}}
+    <p>nessecita de aprovação</p>
+{{/if}}
+
+<p>Nome user : {{user.name}}  {{user.surname}}</p>
+
+{{#if auth}}
+<p>
+    clique aqui para acessar<a href="/dashboard">clique aqui</a>
+</p>
+{{/if}}
